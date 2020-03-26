@@ -303,29 +303,43 @@ body {
 }
 
 .subscribe-form {
-    display: flex;
+    display: flex; /*1-ый вариант верстки, для 2-го варианта удалить*/
+    /* position: relative; /*2-ой вариант верстки*/
     margin-bottom: 48px;
 }
 
 .subscribe-input {
+    width: calc(100% - 5px);
+    height: 40px;
     background-color: rgba(196, 196, 196, 0.5);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 12px 18px;
-    border: none;
     color: #AEAEAE;
-    flex: 1;
+    flex: 1; /*1-ый вариант верстки, для 2-го варианта удалить*/
     font-size: 14px;
     line-height: 16px;
 }
 
-.subscribe-button {
+.subscribe-button {  /*1-ый вариант верстки*/
     width: 43.5px;
     height: 40px;
     background: #FF8F27;
     border-radius: 0px 5px 5px 0px;
     padding: 12px;
 }
+
+/*.subscribe-button {  /*2-ой вариант верстки/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43.5px;
+    height: 40px;
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    padding: 9px;
+    text-align: center;
+}*/
 
 @media (max-width: 1200px) { /*если ширина экрана < 1200px*/
     .container {
