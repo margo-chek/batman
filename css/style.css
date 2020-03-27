@@ -278,7 +278,12 @@ body {
 }
 
 .tabs-content {
+    display: none;
     margin-right: 78px;
+}
+
+.visible {
+    display: block;
 }
 
 .bookmark-added {
